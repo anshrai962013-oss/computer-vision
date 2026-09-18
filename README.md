@@ -21,3 +21,26 @@ VisionAttend is an end-to-end computer vision application that replaces manual r
    ```bash
    git clone [https://github.com/anshrai962013-oss/computer-vision.git](https://github.com/anshrai962013-oss/computer-vision.git)
    cd computer-vision
+2. Create and activate a virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## 5. Execution Steps
+1. **Enroll a new user (generates facial training set):**
+   ```bash
+   python main.py --enroll
+   ```
+2. **Train the LBPH Classifier:**
+   ```bash
+   python main.py --train
+   ```
+3. **Execute the Real-Time Attendance System:**
+   ```bash
+   python main.py --scan
+   ```
