@@ -44,3 +44,8 @@ VisionAttend is an end-to-end computer vision application that replaces manual r
    ```bash
    python main.py --scan
    ```
+## 6. Testing
+Execute unit tests validating cascade loading, file structures, and ledger integrity:
+```bash
+pytest tests/
+```
